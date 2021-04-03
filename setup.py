@@ -10,9 +10,9 @@ setup(
     author='Ta-Chun (Jeff) Liu',                   # Type in your name
     author_email='ta-chun.liu@oncology.ox.ac.uk',      # Type in your E-Mail
     # Provide either the link to your github or to your website
-    url='https://github.com/jeffliu6068/GMMchisquare',
+    url='https://github.com/jeffliu6068/GMMchi',
     # I explain this later on
-    download_url='https://github.com/jeffliu6068/GMMchisquare/archive/v_02.tar.gz',
+    download_url='https://github.com/jeffliu6068/GMMchi/archive/v_01.tar.gz',
     # Keywords that define your package best
     keywords=['GMM', 'Chi-square', 'Categorization', 'GMMchi'],
     install_requires=[
