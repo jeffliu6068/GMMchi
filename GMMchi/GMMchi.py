@@ -1,8 +1,8 @@
-import GMMchi_func
-import dynamic_binning
-import solve_gaussians
-import probe_filter
-import find_hits
+from .GMMchi_func import *
+form .dynamic_binning import *
+from .solve_gaussians import *
+from .probe_filter import *
+from .find_hits import*
 
 def GMM_modelingt(ID, input_datanormal, log2transform=True, dynamic_binning_s=True, tune_factor=0.99, filt=None, verbosity=False, graphs=True,
                   graph_show=True, farinto=0.01, meanf=0, calc_back=False, stdf=0, chisquaremethod=True, unimodal_categories=True,
