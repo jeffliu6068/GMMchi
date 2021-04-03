@@ -9,7 +9,7 @@ setup(
     url='http://pypi.python.org/pypi/GMMchi/',
     license='LICENSE.txt',
     description='GMM with chi-square protocol',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
     install_requires=[
         'pandas',
         'scipy',
