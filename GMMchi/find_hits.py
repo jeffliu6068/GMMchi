@@ -1,4 +1,4 @@
-from run_hit_func import *
+import run_hit_func
 
 def find_hits(ip, primary, verbose=True, correction=True):
     """ This function is used to take in pre-computed subcategorized data and calculate the chi-square contingency table 
