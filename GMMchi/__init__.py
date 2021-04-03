@@ -5,5 +5,3 @@ Date: 03/April/2021
 """
 
 __version__ = "0.1"
-
-import GMMchi
