@@ -1,5 +1,5 @@
 from .GMMchi_func import *
-form .dynamic_binning import *
+from .dynamic_binning import *
 from .solve_gaussians import *
 
 def GMM_modelingt(ID, input_datanormal, log2transform=True, dynamic_binning_s=True, tune_factor=0.99, filt=None, verbosity=False, graphs=True,
