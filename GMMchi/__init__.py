@@ -8,3 +8,4 @@ __version__ = "0.1"
 
 from .GMMchi import *
 from .find_hits import *
+from .probe_filter import *
