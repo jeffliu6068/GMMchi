@@ -5,3 +5,6 @@ Date: 03/April/2021
 """
 
 __version__ = "0.1"
+
+from .GMMchi import *
+from .find_hits import *
