@@ -1,3 +1,5 @@
+import numpy as np
+
 def solve_gaussians(m1, m2, cov1, cov2, s1, s2, minimum, maximum):
     std1 = np.sqrt(cov1)
     std2 = np.sqrt(cov2)
