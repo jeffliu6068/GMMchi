@@ -27,7 +27,6 @@ sns.set(color_codes=True)
 mpl.rcParams['figure.dpi'] = 300
 warnings.filterwarnings("ignore")
 
-%matplotlib inline
 
 form .dynamic_binning import *
 from .solve_gaussians import*
