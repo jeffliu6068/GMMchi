@@ -28,7 +28,7 @@ mpl.rcParams['figure.dpi'] = 300
 warnings.filterwarnings("ignore")
 
 
-form .dynamic_binning import *
+from .dynamic_binning import *
 from .solve_gaussians import*
 
 def GMM_pipeline(data, log2transform,  filt, meanf, stdf, verbosity=False, farinto=0.01, dynamic_binning_s=True, Single_tail_validation=True, tune_factor=0.99,
