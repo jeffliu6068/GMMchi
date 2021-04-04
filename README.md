@@ -47,7 +47,7 @@ The goal of GMMchi in gene expression analysis is the categorization of continuo
 4) If doing a full-scale screen or analysis, categorize all gene expresssions by running a for loop to apply GMMchi on each gene to recreate a categorized matrix with each sample cateogrized as 1, 2, or 3
 5) Run 2x2 table analysis on the categorized matrix 
 
-# Available Tools in the GMMchisquare Package
+# Available Tools in the GMMchi Package
 
 ## Calculating Background Threshold
 
