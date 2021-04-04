@@ -89,7 +89,7 @@ input_dataf = GMMchi.probe_filter(input_data_cancer, log2transform=True, filt=-0
 
 #### Input
 
-filt (float): the background threshold. Note that the threshold needs to match the parameter log2transform such that if log2transform = True, filt needs to be a log2transformed threshold and vice versa
+filt: the background threshold. Note that the threshold needs to match the parameter log2transform such that if log2transform = True, filt needs to be a log2transformed threshold and vice versa
 
 #### Output 
 
