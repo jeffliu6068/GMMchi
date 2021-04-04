@@ -57,7 +57,7 @@ GMMchi.GMMmodelingt is the function that runs GMMchi on input data. Here, we def
 means, std, filt = GMMchi.GMM_modelingt('TCGA Colorectal Cancer', input_data_cancer, log2transform=True, 
                         verbosity = True, Single_tail_validation=False, calc_back = True)
 ```
-### Input
+#### Input
 
 'TCGA Colorectal Cancer': When calc_back = True, input string will be automatically used as the title for your output graphs
 
@@ -71,7 +71,7 @@ calc_back: Boolean to indicate whether to calculate background threshold
 
 Single_tail_validation: Boolean to indicate whether to run single tail identification on non-normal tails, usually the dataset is so big, it is much more computationally efficient to set this as False
 
-### Output
+#### Output
 
 means: Mean of identified distributions
 
@@ -87,11 +87,11 @@ GMMchi.probe_filter is used to filter and remove non-expressing probe sets or ge
 input_dataf = GMMchi.probe_filter(input_data_cancer, log2transform=True, filt=-0.829)
 ```
 
-### Input
+#### Input
 
 filt (float): the background threshold. Note that the threshold needs to match the parameter log2transform such that if log2transform = True, filt needs to be a log2transformed threshold and vice versa
 
-### Output 
+#### Output 
 
 input_dataf: return dataframe with filtered probesets 
 
@@ -103,7 +103,7 @@ gene = 'TGFB1' #Transforming growth factor beta 1
 info, classif, categories, chi, bins, f = GMMchi.GMM_modelingt(gene, input_dataf, log2transform = True,
                                             filt=-0.83, meanf= -3.3, stdf = 1.95)
 ```
-### Input
+#### Input
 
 gene: gene of interest
 
@@ -113,7 +113,7 @@ meanf: mean of the background distribution (retrieved from the result of **Calcu
 
 stdf: standard deviation of background distribution (retrieved from the result of **Calculating Background Threshold**)
 
-### Output
+#### Output
 
 info: mean(s), covariance(s), and threshold(s) of the identified distribution returned as a list of list
 
@@ -164,13 +164,13 @@ twobytwo_table = pd.DataFrame(table_sig_hits, columns = ['+/+', '+/-', '-/+', '-
 #save your 2x2 table for further analysis
 twobytwo_table.sort_values('R value', ascending=False).to_csv(r'2by2table_tgfb1.csv')
 ```
-### Input
+#### Input
 
 categorized_df: Dataframe with categorized data that is composed of 1 or 2s (1 = low; 2 = high)
 
 primary: Gene of interest that will be used as the primary gene compared to all other genes (index) to find correlation
 
-### Output
+#### Output
 
 Hits: 2x2 contingency table p value 
 
