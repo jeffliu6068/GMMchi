@@ -159,10 +159,10 @@ GMMchi.find_hits is used to perform a 2x2 contingency table analysis with the ca
 ```
 hits, significant_hits, table_sig_hits = GMMchi.find_hits(categorized_df, primary='TGFB1')
 
-2by2table = pd.DataFrame(table_sig_hits, columns = ['+/+', '+/-', '-/+', '-/-', 'p-value', 'R value', 'Inclusion Criterion'], index = significant_hits.T.columns[1:])
+twobytwo_table = pd.DataFrame(table_sig_hits, columns = ['+/+', '+/-', '-/+', '-/-', 'p-value', 'R value', 'Inclusion Criterion'], index = significant_hits.T.columns[1:])
 
 #save your 2x2 table for further analysis
-2by2table.sort_values('R value', ascending=False).to_csv(r'2by2table_tgfb1.csv')
+twobytwo_table.sort_values('R value', ascending=False).to_csv(r'2by2table_tgfb1.csv')
 ```
 ### Input
 
